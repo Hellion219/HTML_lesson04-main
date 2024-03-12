@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы на веб-странице</title>
+    <style>
+        ul.news {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul.news li {
+            margin-bottom: 12px;
+        }
+
+        ul.news li:first-child {
+            margin-top: 5px;
+        }
+
+        img {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color:blue;
+        }
+        
+        a:active {
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--Верхняя часть таблицы-->
+    <table width="900" style="border-collapse: collapse;" align="center">
+        <!-- Заголовок в виде картинки -->
+        <caption style="margin-bottom: 10px;"><img src="images/baner.jpg "></caption>
+        <!--Меню -->
+        <tr align="center" bgcolor="#009bff" height="30">
+            <td><a href="#">Специальности</a></td>
+            <td><a href="#">Профориентация</a></td>
+            <td><a href="#">Учительская</a></td>
+            <td><a href="#">Проекты учащихся</a></td>
+        </tr>
+    </table>
+
+    <!--Центр и подвал-->
+    <table width="900" style="border-collapse: collapse;" align="center">
+        <tbody>
+            <tr height="30" style="border: 2px solid #085ff6; border-bottom: 0px;">
+                <th width="245" bgcolor="#ff64fe">Новости</th>
+                <td style="padding: 0px; border: 2px solid #085ff6;" align="center" rowspan="2">
+                    <img src="images/UPK.jpg">
+                </td>
+                <th width="245" bgcolor="#ff64fe">Заполните анкету</th>
+            </tr>
+
+            <tr style="border: 2px solid #085ff6; border-top: 0px;">
+                <td bgcolor=" #ffffff" valign="top">
+                    <ul class="news">
+                        <li><a href="#">Новость1</a></li>
+                        <li><a href="#">Новость2</a></li>
+                        <li><a href="#">Новость3</a></li>
+                        <li><a href="#">Новость4</a></li>
+                        <li><a href="#">Новость5</a></li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr style="border: 2px solid #085ff6; border-top: 4px solid #085ff6;" bgcolor="#ffffff">
+                <td align="center"><img src="images/UPK2.gif"></td>
+                <td style="border: 2px solid #085ff6;" align="center"><a style="text-decoration:none; color:blue" href="#"><i>Наш адрес</i><br>Пушкина, 42</a></td>
+                <td align="center"><a style="text-decoration:underline; color:blue" href="#">phrupk2@minsk.edu.by</a></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
